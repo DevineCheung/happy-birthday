@@ -1273,17 +1273,24 @@ audio {
 }
 .message p {
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 42px;
+	line-height: 1.6;             /* 行距更舒适 */
+	padding: 20px 30px;           /* 加宽内边距 */
 	text-transform: uppercase;
 	color: #C4515C;
-	text-shadow: 2px 2px 2px #FFF;
+	text-shadow: 2px 2px 4px #FFF;
 	display: none;
-	font-weight: bold;
+	font-weight: 700;             /* 与 bold 效果一致，更标准 */
+	font-style: normal;           /* ✅ 去除斜体 */
+	background: rgba(255, 255, 255, 0.3); /* 半透明背景，突出文字 */
+	border-radius: 12px;          /* 圆角边框 */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影让文字浮起来 */
 }
 
 .btn-primary {
         border-color: #466baf;
-        padding: 10px;
+		padding: 12px 26px; /* 增加按钮大小 */
+		font-size: 16px;  /* ✅ 加这行，调整按钮字体大小 */
 
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
